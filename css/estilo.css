@@ -1,7 +1,7 @@
 body{
     font-family: 'EB Garamond', serif;
     font-size: 20px;
-    background-color: white;
+    background-color: grey;
 }
 
 #logo{
@@ -15,8 +15,13 @@ body{
 
 #btnLogin{
     color: black;
+    margin-left: 470px;
 }
 
 #btnLogin:hover{
     color: #CD3278;
+}
+
+.nav{
+    background-color: white
 }
