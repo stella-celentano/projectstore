@@ -19,6 +19,7 @@ require_once "painel/usuarios/conexao.php";
 </head>
 
 <body>
+    
     <div class="nav">
         <nav class="navbar navbar-expand-lg navbar-light">
             <img src="img/logo.png" alt="logo" id="logo">
@@ -35,7 +36,7 @@ require_once "painel/usuarios/conexao.php";
                 </div>
             </div>
             <div>
-                <a class="nav-item nav-link" id="btnLogin" href="#"><b>Entrar/Cadastrar</b></a>
+                <a class="nav-item nav-link" id="btnLogin" href="painel/usuarios/entrarEcadastrar.php"><b>Entrar/Cadastrar</b></a>
             </div>
         </nav>
     </div>
