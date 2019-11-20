@@ -23,7 +23,7 @@ $registro = mysqli_fetch_assoc($resultado);
 
 if (password_verify($senha, $registro['senha'])) {
     $_SESSION['usuario'] = $registro['id'];
-    header('location: index.php');
+    header('location: entrarEcadastrar.php');
 } else {
-    echo "Senha incorreta!";
+    echo "Usuário ou Senha incorreto!";
 }
