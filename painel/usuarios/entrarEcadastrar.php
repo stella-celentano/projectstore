@@ -1,5 +1,6 @@
 <?php
 require_once "conexao.php";
+require_once "../../topo.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,8 +12,10 @@ require_once "conexao.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reaproveite</title>
 
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
     <link rel="shortcut icon" type="image/x-png" href="../../img/logo.png">
     <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+    
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:600&display=swap" rel="stylesheet">
 </head>
 
@@ -20,6 +23,7 @@ require_once "conexao.php";
 
     <div class="entrar">
         <form action="entrar_proc.php" method="post">
+            <h3>Já sou Cliente</h3>
             <label for="login">Usuário</label><br>
             <input type="text" id="input" name="login"><br>
             <label for="senha">Senha</label><br>
@@ -30,21 +34,22 @@ require_once "conexao.php";
 
     <div class="cadastrar">
         <form action="cadastrar_proc.php" method="post">
-            <label for="nome">Nome</label><br>
-            <input type="text" id="input"><br>
-            <label for="sobrenome">Sobrenome</label><br>
-            <input type="text" id="input"><br>
-            <label for="telefone">Telefone</label><br>
-            <input type="text" id="input"><br>
-            <label for="cidade">Cidade</label><br>
-            <input type="text" id="input"><br>
-            <label for="num">Estado</label><br>
-            <input type="text" id="input"><br>
-            <label for="num">Usuário</label><br>
-            <input type="text" id="input"><br>
-            <label for="num">Senha</label><br>
-            <input type="text" id="input"><br><br>
-            <button type="submit" id="btn">Cadastrar</button>
+            <h3>Quero Criar uma Conta</h3>
+            <label for="nome" id="cad">Nome</label>
+            <input type="text" id="cad">
+            <label for="sobrenome" id="cad">Sobrenome</label>
+            <input type="text" id="cad"><br>
+            <label for="telefone" id="cad">Telefone</label>
+            <input type="text" id="cad"><br>
+            <label for="cidade" id="cad">Cidade</label>
+            <input type="text" id="cad">
+            <label for="estado" id="cad">Estado</label>
+            <input type="text" id="cad"><br>
+            <label for="usuario" id="cad">Usuário</label>
+            <input type="text" id="cad"><br>
+            <label for="senha" id="cad">Senha</label>
+            <input type="text" id="cad"><br><br>
+            <button type="submit" class="btn1" id="btn">Cadastrar</button>
         </form>
     </div>
 
