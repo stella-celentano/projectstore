@@ -15,7 +15,7 @@ body{
 
 #btnLogin{
     color: black;
-    margin-left: 470px;
+    margin-left: 560px;
 }
 
 #btnLogin:hover{
@@ -32,7 +32,7 @@ body{
 
 .entrar{
     margin-left: 900px;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 20px;
 }
 
@@ -45,7 +45,7 @@ body{
 }
 
 .cadastrar{
-    margin-top: -225px;
+    margin-top: -280px;
     margin-left: 20px;
 }
 
@@ -58,7 +58,7 @@ body{
 #cad{
     font-size: 20px;
     margin-left: 5px;
-    margin-top: 20px;
+    margin-top: 0px;
     border: none;
     border-radius: 5px;
 }
@@ -76,5 +76,9 @@ h3{
 }
 
 .btn1{
-    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.estado{
+    width: 100px;
 }

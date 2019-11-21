@@ -6,6 +6,7 @@ require_once '../usuarios/conexao.php';
 
 $nome = $_POST['nome'];
 $sobrenome = $_POST['sobrenome'];
+$email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $cidade = $_POST['cidade'];
 $estado = $_POST['estado'];
@@ -15,21 +16,17 @@ $senha = $_POST['senha'];
 
 $hash = password_hash($senha, PASSWORD_DEFAULT);
 
-if ($usuario == "" || $usuario == null) {
-    echo "<script language = 'javascript' type = 'text/javascript'>
-    alert('O campo Usuário deve ser preenchido');window.location.href='entrarEcadastrar.php';
-    </script>";
+$sql = "SELECT id,usuario FROM usuarios
+        WHERE usuario = '$usuario'";
+$resultado = mysqli_query($banco, $sql);
+$registro = mysqli_fetch_assoc($resultado);
+
+if ($registro['usuario'] == $usuario) {
+    echo "Esse Usuário já existe!";
 } else {
-    
-        $sql = "INSERT INTO usuarios (nome,sobrenome,telefone,cidade,estado,usuario,senha)
-                VALUES(''$nome','$sobrenome','$telefone','$cidade','$estado','$usuario','$hash')";
-         mysqli_query($banco, $sql);
-
-        
-            echo "<script language = 'javascript' type = 'text/javascript'>
-            alert('Usuário cadastrado com sucesso!');window.location.href='entrarEcadastrar.php';
-            </script>";
-       
-        }
-    
-
+    $sql = "INSERT INTO usuarios (nome,sobrenome,email,telefone,cidade,estado,usuario,senha)
+    VALUES('$nome','$sobrenome','$email','$telefone','$cidade','$estado','$usuario','$hash')";
+    mysqli_query($banco, $sql);
+    echo mysqli_error($banco);
+    echo "Usuário cadastrado com sucesso!";
+}

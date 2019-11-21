@@ -22,13 +22,12 @@ require_once "painel/usuarios/conexao.php";
     
     <div class="nav">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <img src="img/logo.png" alt="logo" id="logo">
+            <img src="/store/img/logo.png" alt="logo" id="logo">
             <a class="navbar-brand" href="#" id="name">Reaproveite</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Novidades</a>
                     <a class="nav-item nav-link" href="#">Promoções</a>
                     <a class="nav-item nav-link" href="#">Feminino</a>
                     <a class="nav-item nav-link" href="#">Masculino</a>

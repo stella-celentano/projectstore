@@ -24,32 +24,35 @@ require_once "../../topo.php";
     <div class="entrar">
         <form action="entrar_proc.php" method="POST">
             <h3>Já sou Cliente</h3>
-            <label for="login">Usuário</label><br>
-            <input type="text" id="input" name="login"><br>
+            <label for="usuario">Usuário</label><br>
+            <input type="text" id="input" name="usuario"><br>
             <label for="senha">Senha</label><br>
             <input type="password" id="input" name="senha"><br><br>
             <button type="submit" id="btn">Entrar</button>
+            <button type="submit" class="btn1" id="btn">Redefinir Senha</button>
         </form>
     </div>
 
     <div class="cadastrar">
         <form action="cadastrar_proc.php" method="POST">
             <h3>Quero Criar uma Conta</h3>
-            <label for="nome" id="cad">Nome</label>
+            <label for="nome" id="cad">Nome</label><br>
             <input type="text" id="cad" name="nome"><br>
-            <label for="sobrenome" id="cad">Sobrenome</label>
+            <label for="sobrenome" id="cad">Sobrenome</label><br>
             <input type="text" id="cad" name="sobrenome"><br>
-            <label for="telefone" id="cad">Telefone</label>
+            <label for="email" id="cad">Email</label><br>
+            <input type="text" id="cad" name="email"><br>
+            <label for="telefone" id="cad">Telefone</label><br>
             <input type="text" id="cad" name="telefone"><br>
-            <label for="cidade" id="cad">Cidade</label>
+            <label for="cidade" id="cad">Cidade</label><br>
             <input type="text" id="cad" name="cidade">
             <label for="estado" id="cad">Estado</label>
-            <input type="text" id="cad" name="estado"><br>
-            <label for="usuario" id="cad">Usuário</label>
+            <input type="text" id="cad" name="estado" class="estado"><br>
+            <label for="usuario" id="cad">Usuário</label><br>
             <input type="text" id="cad" name="usuario"><br>
-            <label for="senha" id="cad" >Senha</label>
+            <label for="senha" id="cad" >Senha</label><br>
             <input type="text" id="cad" name="senha"><br><br>
-            <button type="submit" class="btn1" id="btn">Cadastrar</button>
+            <button type="submit" id="btn">Cadastrar</button>
         </form>
     </div>
 

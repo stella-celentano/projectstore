@@ -17,7 +17,7 @@ $senha = filter_input(
 
 
 $sql = "SELECT id,usuario,senha FROM usuarios
-        WHERE login = '$usuario'";
+        WHERE usuario = '$usuario'";
 $resultado = mysqli_query($banco, $sql);
 $registro = mysqli_fetch_assoc($resultado);
 
