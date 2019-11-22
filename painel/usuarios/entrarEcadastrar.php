@@ -15,7 +15,7 @@ require_once "../../topo.php";
     <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
     <link rel="shortcut icon" type="image/x-png" href="../../img/logo.png">
     <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
-    
+
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:600&display=swap" rel="stylesheet">
 </head>
 
@@ -36,23 +36,65 @@ require_once "../../topo.php";
     <div class="cadastrar">
         <form action="cadastrar_proc.php" method="POST">
             <h3>Quero Criar uma Conta</h3>
-            <label for="nome" id="cad">Nome</label><br>
-            <input type="text" id="cad" name="nome"><br>
-            <label for="sobrenome" id="cad">Sobrenome</label><br>
-            <input type="text" id="cad" name="sobrenome"><br>
-            <label for="email" id="cad">Email</label><br>
-            <input type="text" id="cad" name="email"><br>
-            <label for="telefone" id="cad">Telefone</label><br>
-            <input type="text" id="cad" name="telefone"><br>
-            <label for="cidade" id="cad">Cidade</label><br>
-            <input type="text" id="cad" name="cidade">
-            <label for="estado" id="cad">Estado</label>
-            <input type="text" id="cad" name="estado" class="estado"><br>
-            <label for="usuario" id="cad">Usuário</label><br>
-            <input type="text" id="cad" name="usuario"><br>
-            <label for="senha" id="cad" >Senha</label><br>
-            <input type="text" id="cad" name="senha"><br><br>
-            <button type="submit" id="btn">Cadastrar</button>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nome" id="cad">Nome</label><br>
+                        <input type="text" id="cad" name="nome"><br>
+                    </td>
+                    <td>
+                        <label for="sobrenome" id="cad">Sobrenome</label><br>
+                        <input type="text" id="cad" name="sobrenome"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email" id="cad">Email</label><br>
+                        <input type="text" id="cad" name="email"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telefone" id="cad">Telefone</label><br>
+                        <input type="text" id="cad" name="telefone"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cidade" id="cad">Cidade</label><br>
+                        <input type="text" id="cad" name="cidade">
+                    </td>
+                    <td>
+                        <label for="estado" id="cad">Estado</label><br>
+                        <input type="text" id="cad" class="estado"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="usuario" id="cad">Usuário</label><br>
+                        <input type="text" id="cad" name="usuario"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="senha" id="cad">Senha</label><br>
+                        <input type="text" id="cad" name="senha"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" id="btn">Cadastrar</button>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+
+
+
+
         </form>
     </div>
 
