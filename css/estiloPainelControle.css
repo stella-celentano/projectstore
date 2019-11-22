@@ -1,0 +1,47 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    background-color: #EEEEE0;
+    display: grid;
+    grid-template-columns: 0.8fr 3fr;
+    /*fr é uma fração, como vai ser feita a divisão, colunas define a largura*/
+    grid-template-rows: 50px auto;
+    /*define a altura das linhas*/
+    grid-template-areas: 
+    "menu corpo"
+    "menu corpo";
+}
+
+.menu{
+    background-color: #151515;
+    grid-area: menu;
+}
+
+.corpo{
+    grid-area: corpo;
+}
+
+.logo{
+    position: relative;
+    left: 25%;
+}
+
+.btn{
+    color: white;
+    margin-top: 30px;
+    margin-left: 5px;
+    border: none;
+    background-color: #151515;
+}
+
+#icon{
+    margin-top: 30px;
+    margin-left: 5px;
+    width: 20px;
+}

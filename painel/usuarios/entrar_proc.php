@@ -23,7 +23,7 @@ $registro = mysqli_fetch_assoc($resultado);
 
 if ($registro['usuario'] == 'admin'){
     $_SESSION['usuario'] = $registro['id'];
-    header('location: entrarEcadastrar.php');
+    header('location: painel_de_controle.php');
 } else if (password_verify($senha, $registro['senha'])) {
     $_SESSION['usuario'] = $registro['id'];
     header('location: entrarEcadastrar.php');
