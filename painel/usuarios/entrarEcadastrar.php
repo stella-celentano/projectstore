@@ -66,7 +66,7 @@ require_once "../../topo.php";
                     </td>
                     <td>
                         <label for="estado" id="cad">Estado</label><br>
-                        <input type="text" id="cad" class="estado"><br>
+                        <input type="text" id="cad" name="estado"><br>
                     </td>
                 </tr>
                 <tr>

@@ -17,10 +17,18 @@ body{
     color: black;
     margin-left: 560px;
 }
-
 #btnLogin:hover{
     color: #CD3278;
 }
+
+#btnSair{
+    color: black;
+    margin-left: 700px;
+}
+#btnSair:hover{
+    color: #CD3278;
+}
+
 
 .nav{
     background-color: white

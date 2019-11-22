@@ -19,7 +19,7 @@ require_once "painel/usuarios/conexao.php";
 </head>
 
 <body>
-    
+
     <div class="nav">
         <nav class="navbar navbar-expand-lg navbar-light">
             <img src="/store/img/logo.png" alt="logo" id="logo">
@@ -35,7 +35,23 @@ require_once "painel/usuarios/conexao.php";
                 </div>
             </div>
             <div>
-                <a class="nav-item nav-link" id="btnLogin" href="painel/usuarios/entrarEcadastrar.php"><b>Entrar/Cadastrar</b></a>
+                <?php
+                session_start();
+                if (!isset($_SESSION['usuario'])) :
+                    ?>
+                    <a class="nav-item nav-link" id="btnLogin" href="/store/painel/usuarios/entrarEcadastrar.php"><b>Entrar/Cadastrar</b></a>
+                <?php
+                endif;
+                ?>
+
+                <?php
+                
+                if (isset($_SESSION['usuario'])) :
+                    ?>
+                    <a class="nav-item nav-link" id="btnSair" href="/store/painel/usuarios/sair_proc.php"><b>Sair</b></a>
+                <?php
+                endif;
+                ?>
             </div>
         </nav>
     </div>
