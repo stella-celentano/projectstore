@@ -1,5 +1,6 @@
 <?php
 require_once 'conexao.php';
+require_once 'restrito.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +27,7 @@ require_once 'conexao.php';
         </div>
 
         <div class="botoes">
-            <button class="btn">Painel de Controle</button><br>
+            <button href="" class="btn">Painel de Controle</button><br>
             <button class="btn">Produtos</button><br>
             <button class="btn">Clientes</button><br>
             <button class="btn">Vendas</button><br>
@@ -38,7 +39,7 @@ require_once 'conexao.php';
     <div class="corpo">
 
     </div>
-
+    
 </body>
 
 </html>

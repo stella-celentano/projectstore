@@ -45,7 +45,7 @@ require_once "painel/usuarios/conexao.php";
                 ?>
 
                 <?php
-                
+
                 if (isset($_SESSION['usuario'])) :
                     ?>
                     <a class="nav-item nav-link" id="btnSair" href="/store/painel/usuarios/sair_proc.php"><b>Sair</b></a>
@@ -55,7 +55,7 @@ require_once "painel/usuarios/conexao.php";
             </div>
         </nav>
     </div>
-
+    
 </body>
 
 </html>
