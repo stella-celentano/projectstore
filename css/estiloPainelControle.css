@@ -25,6 +25,15 @@ body{
 
 .corpo{
     grid-area: corpo;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#insere_produto{
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .logo{
@@ -47,3 +56,23 @@ body{
     margin-left: 5px;
     width: 20px;
 }
+
+#btnSalvar{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(108, 159, 255, 0.808);
+}
+
+#btnListar{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(108, 255, 140, 0.808);
+    margin-left: 10px;
+}
+#listar{
+    color: black;
+}
+a:link 
+{ 
+ text-decoration:none; 
+} 

@@ -29,7 +29,7 @@ require_once '../usuarios/restrito.php';
 
         <div class="botoes">
             <a class="nav-item nav-link" id="btn" href=""><b>Painel de Controle</b></a><br>
-            <a class="nav-item nav-link" id="btn" href=""><b>Produtos</b></a><br>
+            <a class="nav-item nav-link" id="btn" href="inserir_produto.php"><b>Produtos</b></a><br>
             <a class="nav-item nav-link" id="btn" href=""><b>Clientes</b></a><br>
             <a class="nav-item nav-link" id="btn" href=""><b>Vendas</b></a><br>
             <a class="nav-item nav-link" id="btn" href="../usuarios/sair_proc.php"><b>Sair</b></a>
