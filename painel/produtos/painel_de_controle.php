@@ -13,7 +13,7 @@ require_once '../usuarios/restrito.php';
     <title>Reaproveite</title>
 
     <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
-    <link rel="shortcut icon" type="image/x-png" href="../../img/logo.ico">
+    <link rel="shortcut icon" type="image/x-png" href="../../img/logo.png">
     <link rel="stylesheet" type="text/css" href="../../css/estiloPainelControle.css">
 
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:600&display=swap" rel="stylesheet">
@@ -24,9 +24,10 @@ require_once '../usuarios/restrito.php';
     <div class="menu">
 
         <div class="botoes">
+            <img src="../../img/logo1.png" alt="" id="imgCriminosa">
             <a class="nav-item nav-link" id="btn" href=""><b>Painel de Controle</b></a><br>
             <a class="nav-item nav-link" id="btn" href="inserir_produto.php"><b>Produtos</b></a><br>
-            <a class="nav-item nav-link" id="btn" href=""><b>Clientes</b></a><br>
+            <a class="nav-item nav-link" id="btn" href="listar_clientes.php"><b>Clientes</b></a><br>
             <a class="nav-item nav-link" id="btn" href=""><b>Vendas</b></a><br>
             <a class="nav-item nav-link" id="btn" href="../usuarios/sair_proc.php"><b>Sair</b></a>
         </div>

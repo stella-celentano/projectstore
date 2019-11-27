@@ -40,7 +40,7 @@ require_once 'painel_de_controle.php';
 
             <div id="alinharBtn">
                 <button id="btnSalvar" type="submit">Salvar</button>
-                <button id="btnListar" type="link"><a href="painel_de_controle.php" id="listar">Listar<a></button><br>
+                <button id="btnListar" type="link"><a href="listar.php" id="listar">Listar<a></button><br>
             </div>
 
             <label for="nome" id="insere_produto">Nome</label><br>
@@ -48,7 +48,7 @@ require_once 'painel_de_controle.php';
             <label for="categoria" id="insere_produto">Categoria</label><br>
             <input type="text" id="insere_produto" name="categoria"><br>
             <label for="descricao" id="insere_produto">Descrição</label><br>
-            <textarea id="texto" name="descricao"></textarea>
+            <textarea id="texto" name="descricao"></textarea><pr>
             <label for="preco" id="insere_produto">Preço</label><br>
             <input type="text" id="insere_produto" name="preco"><br>
             <label for="imagem" id="insere_produto">Imagem</label><br>

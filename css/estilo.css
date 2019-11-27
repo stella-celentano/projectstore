@@ -16,7 +16,7 @@ body{
 
 #btnLogin{
     color: black;
-    margin-left: 560px;
+    margin-left: 670px;
 }
 #btnLogin:hover{
     color: #CD3278;
@@ -24,7 +24,7 @@ body{
 
 #btnSair{
     color: black;
-    margin-left: 660px;
+    margin-left: 800px;
 }
 #btnSair:hover{
     color: #CD3278;
@@ -48,6 +48,7 @@ body{
 }
 
 .entrar{
+    
     margin-left: 900px;
     margin-top: 10px;
     font-size: 20px;
@@ -62,6 +63,7 @@ body{
 }
 
 .cadastrar{
+    
     margin-top: -280px;
     margin-left: 5px;
 }

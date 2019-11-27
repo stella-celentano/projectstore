@@ -17,6 +17,7 @@ require_once "../../topo.php";
     <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
 
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,8 +31,15 @@ require_once "../../topo.php";
             <input type="password" id="input" name="senha"><br><br>
             <button type="submit" id="btn">Entrar</button>
             <button type="submit" class="btn1" id="btn">Redefinir Senha</button>
+            <input type="button" value="cadastrar" id="botaoExibirCadastro"/>
         </form>
     </div>
+    <script type="text/javascript">
+        $("#botaoExibirCadastro").click(function(){
+            $(".cadastrar").show();
+            $(".entrar").hide();
+        });
+    </script>
 
     <div class="cadastrar">
         <form action="cadastrar_proc.php" method="POST">
@@ -92,14 +100,6 @@ require_once "../../topo.php";
                     </td>
                 </tr>
             </table>
-
-
-
-
-
-
-
-
         </form>
     </div>
 

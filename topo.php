@@ -11,7 +11,7 @@ require_once "painel/usuarios/conexao.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reaproveite</title>
 
-    <link rel="shortcut icon" type="image/x-png" href="img/logo.ico">
+    <link rel="shortcut icon" type="image/x-png" href="../../img/logo.png">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@ require_once "painel/usuarios/conexao.php";
 
     <div class="nav">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <img src="/store/img/logo.ico" alt="logo" id="logo">
+          <a href="">  <img src="/store/img/logo1.png" alt="logo" id="logo"> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
