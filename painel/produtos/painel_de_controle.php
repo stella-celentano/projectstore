@@ -13,7 +13,7 @@ require_once '../usuarios/restrito.php';
     <title>Reaproveite</title>
 
     <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
-    <link rel="shortcut icon" type="image/x-png" href="../../img/logo.png">
+    <link rel="shortcut icon" type="image/x-png" href="../../img/logo.ico">
     <link rel="stylesheet" type="text/css" href="../../css/estiloPainelControle.css">
 
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:600&display=swap" rel="stylesheet">
@@ -22,10 +22,6 @@ require_once '../usuarios/restrito.php';
 <body>
 
     <div class="menu">
-
-        <div class="logo">
-            <img src="../../img/logo.png" alt="logo">
-        </div>
 
         <div class="botoes">
             <a class="nav-item nav-link" id="btn" href=""><b>Painel de Controle</b></a><br>
