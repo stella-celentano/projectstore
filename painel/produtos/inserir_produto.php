@@ -37,8 +37,11 @@ require_once 'painel_de_controle.php';
     <div class="corpo">
         <h3>Inserir Produto</h3>
         <form enctype="multipart/form-data" action="inserir_proc.php" method="post">
-            <button id="btnSalvar" type="submit">Salvar</button>
-            <button id="btnListar" type="link"><a href="painel_de_controle.php" id="listar">Listar<a></button><br>
+
+            <div id="alinharBtn">
+                <button id="btnSalvar" type="submit">Salvar</button>
+                <button id="btnListar" type="link"><a href="painel_de_controle.php" id="listar">Listar<a></button><br>
+            </div>
 
             <label for="nome" id="insere_produto">Nome</label><br>
             <input type="text" id="insere_produto" name="nome"><br>
