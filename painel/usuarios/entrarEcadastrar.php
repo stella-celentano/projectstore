@@ -39,6 +39,11 @@ require_once "../../topo.php";
             <table>
                 <tr>
                     <td>
+                    <p>*Todos os campos são obrigatórios!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <label for="nome" id="cad">Nome</label><br>
                         <input type="text" id="cad" name="nome"><br>
                     </td>
@@ -83,7 +88,7 @@ require_once "../../topo.php";
                 </tr>
                 <tr>
                     <td>
-                        <button type="submit" id="btn">Cadastrar</button>
+                        <button type="submit" class="btn2" id="btn">Cadastrar</button>
                     </td>
                 </tr>
             </table>

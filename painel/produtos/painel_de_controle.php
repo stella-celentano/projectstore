@@ -1,6 +1,6 @@
 <?php
-require_once 'conexao.php';
-require_once 'restrito.php';
+require_once '../usuarios/conexao.php';
+require_once '../usuarios/restrito.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,21 +22,24 @@ require_once 'restrito.php';
 <body>
 
     <div class="menu">
+
         <div class="logo">
             <img src="../../img/logo.png" alt="logo">
         </div>
 
         <div class="botoes">
-            <button href="" class="btn">Painel de Controle</button><br>
-            <button class="btn">Produtos</button><br>
-            <button class="btn">Clientes</button><br>
-            <button class="btn">Vendas</button><br>
-            <button class="btn">Sair</button><br>
+            <a class="nav-item nav-link" id="btn" href=""><b>Painel de Controle</b></a><br>
+            <a class="nav-item nav-link" id="btn" href=""><b>Produtos</b></a><br>
+            <a class="nav-item nav-link" id="btn" href=""><b>Clientes</b></a><br>
+            <a class="nav-item nav-link" id="btn" href=""><b>Vendas</b></a><br>
+            <a class="nav-item nav-link" id="btn" href="../usuarios/sair_proc.php"><b>Sair</b></a>
         </div>
 
     </div>
 
     <div class="corpo">
+
+
 
     </div>
     

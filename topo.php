@@ -48,14 +48,17 @@ require_once "painel/usuarios/conexao.php";
 
                 if (isset($_SESSION['usuario'])) :
                     ?>
-                    <a class="nav-item nav-link" id="btnSair" href="/store/painel/usuarios/sair_proc.php"><b>Sair</b></a>
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="btnSair" href="/store/painel/usuarios/sair_proc.php"><b>Sair</b></a>
+                        <a class="nav-item nav-link" id="btnCarrinho" href="#"><b>Carrinho</b></a>
+                    </div>
                 <?php
                 endif;
                 ?>
             </div>
         </nav>
     </div>
-    
+
 </body>
 
 </html>

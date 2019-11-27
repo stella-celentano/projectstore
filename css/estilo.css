@@ -23,10 +23,18 @@ body{
 
 #btnSair{
     color: black;
-    margin-left: 700px;
+    margin-left: 660px;
 }
 #btnSair:hover{
     color: #CD3278;
+}
+
+#btnCarrinho{
+    color: black;
+    margin-left: -150px;
+}
+#btnCarrinho:hover{
+    color: #CD3278; 
 }
 
 
@@ -54,7 +62,13 @@ body{
 
 .cadastrar{
     margin-top: -280px;
-    margin-left: 20px;
+    margin-left: 5px;
+}
+
+p{
+    font-size: 14px;
+    margin-left: 5px;
+    color: red;
 }
 
 #input{
@@ -66,7 +80,6 @@ body{
 #cad{
     font-size: 20px;
     margin-left: 5px;
-    margin-top: 0px;
     border: none;
     border-radius: 5px;
 }
@@ -85,5 +98,9 @@ h3{
 
 .btn1{
     margin-top: 10px;
+}
+
+.btn2{
+    margin-left: 5px;
 }
 
