@@ -41,68 +41,69 @@ require_once "../../topo.php";
         });
     </script>
 
-    <div class="cadastrar">
-        <form action="cadastrar_proc.php" method="POST">
-            <h3>Quero Criar uma Conta</h3>
-            <table>
-                <tr>
-                    <td>
-                    <p>*Todos os campos são obrigatórios!</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="nome" id="cad">Nome</label><br>
-                        <input type="text" id="cad" name="nome"><br>
-                    </td>
-                    <td>
-                        <label for="sobrenome" id="cad">Sobrenome</label><br>
-                        <input type="text" id="cad" name="sobrenome"><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email" id="cad">Email</label><br>
-                        <input type="text" id="cad" name="email"><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="telefone" id="cad">Telefone</label><br>
-                        <input type="text" id="cad" name="telefone"><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="cidade" id="cad">Cidade</label><br>
-                        <input type="text" id="cad" name="cidade">
-                    </td>
-                    <td>
-                        <label for="estado" id="cad">Estado</label><br>
-                        <input type="text" id="cad" name="estado"><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="usuario" id="cad">Usuário</label><br>
-                        <input type="text" id="cad" name="usuario"><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="senha" id="cad">Senha</label><br>
-                        <input type="text" id="cad" name="senha"><br><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button type="submit" class="btn2" id="btn">Cadastrar</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
+    <div id="divPrincipalEntrarCadastrar">
+        <div class="cadastrar">
+            <form action="cadastrar_proc.php" method="POST">
+                <h3>Quero Criar uma Conta</h3>
+                <table>
+                    <tr>
+                        <td>
+                        <p>*Todos os campos são obrigatórios!</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nome" id="cad">Nome</label><br>
+                            <input type="text" id="cad" name="nome"><br>
+                        </td>
+                        <td>
+                            <label for="sobrenome" id="cad">Sobrenome</label><br>
+                            <input type="text" id="cad" name="sobrenome"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email" id="cad">Email</label><br>
+                            <input type="text" id="cad" name="email"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telefone" id="cad">Telefone</label><br>
+                            <input type="text" id="cad" name="telefone"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cidade" id="cad">Cidade</label><br>
+                            <input type="text" id="cad" name="cidade">
+                        </td>
+                        <td>
+                            <label for="estado" id="cad">Estado</label><br>
+                            <input type="text" id="cad" name="estado"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="usuario" id="cad">Usuário</label><br>
+                            <input type="text" id="cad" name="usuario"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="senha" id="cad">Senha</label><br>
+                            <input type="text" id="cad" name="senha"><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" class="btn2" id="btn">Cadastrar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </div>
-
 </body>
 
 </html>

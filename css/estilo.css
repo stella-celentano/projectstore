@@ -47,12 +47,6 @@ body{
     background-color: tomato;
 }
 
-.entrar{
-    
-    margin-left: 900px;
-    margin-top: 10px;
-    font-size: 20px;
-}
 
 #login{
     font-size: 20px;
@@ -62,10 +56,19 @@ body{
     font-size: 20px;
 }
 
+.entrar{
+    
+    /*margin-left: 900px;
+    margin-top: 10px;*/
+    font-size: 20px;
+    grid-area: a;
+}
+
 .cadastrar{
     
-    margin-top: -280px;
-    margin-left: 5px;
+    /*margin-top: -280px;
+    margin-left: 5px;*/
+    grid-area: b;
 }
 
 p{
@@ -107,3 +110,10 @@ h3{
     margin-left: 5px;
 }
 
+#divPrincipalEntrarCadastrar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a b";
+}
