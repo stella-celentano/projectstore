@@ -90,3 +90,13 @@ a:link
     width: 100%;
  
 }
+
+#imprimir{
+    background-color: rgb(0, 102, 255);
+    border: none;
+    font-size: 18px; 
+}
+
+.card{
+    margin: 2.5%;
+}

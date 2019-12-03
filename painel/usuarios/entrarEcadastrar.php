@@ -38,7 +38,7 @@ require_once "../../topo.php";
                 <table>
                     <tr>
                         <td>
-                            <p>*Todos os campos são obrigatórios!</p>
+                            <p class="p">*Todos os campos são obrigatórios!</p>
                         </td>
                     </tr>
                     <tr>

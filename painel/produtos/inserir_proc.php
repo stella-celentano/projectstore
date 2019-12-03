@@ -17,7 +17,7 @@ $preco = filter_input(INPUT_POST,"preco",
 FILTER_SANITIZE_SPECIAL_CHARS);
 $preco = mysqli_real_escape_string($banco,$preco);
 
-$destino = "img/".$_FILES['imagem']['name'];
+$destino = "../../img/".$_FILES['imagem']['name'];
 move_uploaded_file($_FILES['imagem']['tmp_name'],$destino);
 $imagem = $_FILES['imagem']['name'];
 

@@ -21,8 +21,35 @@ require_once "painel_de_controle.php";
 <body>
     <div class="corpo">
         <h3>Relatório de Vendas</h3>
-        <br><br>
+        <br>
 
+        <div class="card" style="width: 30rem;">
+            <div class="card-body">
+                <h2 class="card-title">Vendas Semanais</h2>
+                <h5 class="h5">Visitas no site: </h5>
+                <h5 class="h5">Média de vendas por semana:</h5>
+                <h5 class="h5">Lucro: </h5>
+                <a href="#" class="btn btn-primary" id="imprimir">Imprimir Relatório Completo</a>
+            </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+            <div class="card-body">
+                <h2 class="card-title">Vendas Mensais</h2>
+                <h5 class="h5">Visitas no site: </h5>
+                <h5 class="h5">Média de vendas por mês:</h5>
+                <h5 class="h5">Lucro: </h5>
+                <a href="#" class="btn btn-primary" id="imprimir">Imprimir Relatório Completo</a>
+            </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+            <div class="card-body">
+                <h2 class="card-title">Vendas Anuais</h2>
+                <h5 class="h5">Visitas no site: </h5>
+                <h5 class="h5">Média de vendas por ano:</h5>
+                <h5 class="h5">Lucro: </h5>
+                <a href="#" class="btn btn-primary" id="imprimir">Imprimir Relatório Completo</a>
+            </div>
+        </div>
     </div>
 
 </body>

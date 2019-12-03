@@ -25,16 +25,16 @@ require_once "../../topo.php";
 
         <?php
         require_once "conexao.php";
-        $sql = 'SELECT * FROM produtos
-                WHERE categoria = 4';
+        $sql = "SELECT * FROM produtos
+                WHERE categoria = 'infantil' OR categoria = 'promoi'";
         $resultado = mysqli_query($banco, $sql);
 
         if ($resultado->num_rows > 0) :
             while ($produto = $resultado->fetch_assoc()) :
                 ?>
 
-                <div class="card" style="width: 25rem; height=20px; background-color:#F5F5F5; border:none;">
-                    <img src="<?= $produto['imagem'] ?>" height="300" width="300" id="imagem">
+                <div class="card" style="width: 25rem; height=20px; background-color:#EEEEE0;border:none;">
+                    <img src="<?= '../../img/'.$produto['imagem'] ?>" height="300" width="300" id="imagem">
                     <div class="card-body">
                         <h4 class="card-title"><?= $produto['nome'] ?></h4>
                         <p class="card-text"> <?= $produto['descricao'] ?> </p>

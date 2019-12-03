@@ -71,7 +71,7 @@ body{
     grid-area: b;
 }
 
-p{
+.p{
     font-size: 14px;
     margin-left: 5px;
     color: red;
@@ -133,8 +133,20 @@ h3{
     position: relative;
     left: 12%;
     top: 1%;
+    border: none;
+    border-radius: 2%;
 }
 
 p{
     color: black;
+    font-size: 14px;
+    margin-left: -0.1%;
+}
+
+#comprar{
+    background-color: green;
+    border: none;
+    font-size: 18px;
+    position: relative;
+    left: 35%;
 }

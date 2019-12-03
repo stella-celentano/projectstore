@@ -25,7 +25,6 @@ require_once "painel_de_controle.php";
         <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <td>Id</td>
                     <td>Nome</td>
                     <td>Telefone</td>
                     <td>Email</td>
@@ -39,7 +38,6 @@ require_once "painel_de_controle.php";
                     while ($usuario = $resultado->fetch_assoc()) :
                         ?>
                         <tr>
-                            <td><?php echo $usuario['id']; ?></td>
                             <td><?= $usuario['nome'] ?></td>
                             <td><?= $usuario['telefone'] ?></td>
                             <td><?= $usuario['email'] ?></td>
