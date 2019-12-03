@@ -1,17 +1,15 @@
 <?php
-require_once '../usuarios/conexao.php';
-require_once '../usuarios/restrito.php';
-require_once 'painel_de_controle.php';
+require_once "../usuarios/restrito.php";
+require_once "painel_de_controle.php";
 ?>
-
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reaproveite</title>
+    <title>Editar Produto</title>
 
     <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
     <link rel="shortcut icon" type="image/x-png" href="../../img/logo.png">
@@ -30,34 +28,45 @@ require_once 'painel_de_controle.php';
             toolbar_sticky: true
         });
     </script>
-
 </head>
 
 <body>
     <div class="corpo">
-        <h3>Inserir Produto</h3>
-        <form enctype="multipart/form-data" action="inserir_proc.php" method="post">
-
+        <form action="editar_proc.php" method="post">
+            <?php
+            require_once "../usuarios/conexao.php";
+            $id = intval($_GET['id']);
+            $sql = "SELECT * FROM produtos
+                    WHERE id = $id LIMIT 1";
+            $resultado = mysqli_query($banco, $sql);
+            $produto = mysqli_fetch_assoc($resultado);
+            ?>
             <label for="nome" id="insere_produto">Nome</label><br>
-            <input type="text" id="insere_produto" name="nome"><br>
+            <input type="text" id="insere_produto" value="<?= $produto['nome'] ?>" name="nome"><br>
+
             <label for="categoria" id="insere_produto">Categoria</label><br>
-            <input type="text" id="insere_produto" name="categoria"><br>
+            <input type="text" id="insere_produto" value="<?= $produto['categoria'] ?>" name="categoria"><br>
+
             <label for="descricao" id="insere_produto">Descrição</label><br>
-            <textarea id="texto" name="descricao"></textarea><pr>
+            <textarea id="texto" name="descricao"><?= $produto['descricao'] ?></textarea>
+            <br>
+
             <label for="preco" id="insere_produto">Preço</label><br>
-            <input type="text" id="insere_produto" name="preco"><br>
+            <input type="text" id="insere_produto" name="preco" value="<?= $produto['preco'] ?>"><br>
+
             <label for="imagem" id="insere_produto">Imagem</label><br>
             <input type="file" id="insere_produto" name="imagem"><br>
-            <br>
+
+
+            <input type="hidden" value="<?= $produto['id'] ?>" name="id">
+
             <br>
             <div id="alinharBtn">
                 <button id="btnSalvar" type="submit">Salvar</button>
                 <button id="btnListar" type="link"><a href="listar.php" id="listar">Listar<a></button><br>
             </div>
-
         </form>
     </div>
-
 </body>
 
 </html>

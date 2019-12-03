@@ -25,10 +25,10 @@ require_once '../usuarios/restrito.php';
 
         <div class="botoes">
             <img src="../../img/logo1.png" alt="" id="imgCriminosa">
-            <a class="nav-item nav-link" id="btn" href=""><b>Painel de Controle</b></a><br>
-            <a class="nav-item nav-link" id="btn" href="inserir_produto.php"><b>Produtos</b></a><br>
+            <a class="nav-item nav-link" id="btn" href="inserir_produto.php"><b>Adicionar Produtos</b></a><br>
+            <a class="nav-item nav-link" id="btn" href="listar.php"><b>Listar Produtos</b></a><br>
+            <a class="nav-item nav-link" id="btn" href="vendas.php"><b>Relatório de Vendas</b></a><br>
             <a class="nav-item nav-link" id="btn" href="listar_clientes.php"><b>Clientes</b></a><br>
-            <a class="nav-item nav-link" id="btn" href=""><b>Vendas</b></a><br>
             <a class="nav-item nav-link" id="btn" href="../usuarios/sair_proc.php"><b>Sair</b></a>
         </div>
 

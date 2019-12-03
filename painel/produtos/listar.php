@@ -20,21 +20,21 @@ require_once "painel_de_controle.php";
 
 <body>
     <div class="corpo">
-
-
-        <a id="btn1" href="inserir_produto.php">Inserir Produto</a>
+        <h3>Lista dos Produtos já cadastrados</h3>
         <br><br>
         <table class="table">
             <thead class="thead-dark">
                 <tr>
                     <td>Id</td>
                     <td>Nome</td>
+                    <td>Categoria</td>
+                    <td>Descrição</td>
                     <td>Preço</td>
                     <td>Opções</td>
                 </tr>
                 <?php
                 require_once '../usuarios/conexao.php';
-                $sql = "SELECT id,nome,preco FROM produtos";
+                $sql = "SELECT * FROM produtos";
                 $resultado = mysqli_query($banco, $sql);
 
                 if ($resultado->num_rows > 0) :
@@ -43,6 +43,8 @@ require_once "painel_de_controle.php";
                         <tr>
                             <td><?php echo $produto['id']; ?></td>
                             <td><?= $produto['nome'] ?></td>
+                            <td><?= $produto['categoria'] ?></td>
+                            <td><?= $produto['descricao'] ?></td>
                             <td><?= $produto['preco'] ?></td>
                             <td>
                                 <a id="btn1" href="editar.php?id=<?= $produto['id'] ?>">

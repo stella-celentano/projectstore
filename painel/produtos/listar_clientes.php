@@ -20,26 +20,29 @@ require_once "painel_de_controle.php";
 
 <body>
     <div class="corpo">
-
+        <h3>Clientes cadastrados</h3>
+        <br><br>
         <table class="table">
             <thead class="thead-dark">
                 <tr>
                     <td>Id</td>
                     <td>Nome</td>
                     <td>Telefone</td>
+                    <td>Email</td>
                 </tr>
                 <?php
                 require_once '../usuarios/conexao.php';
-                $sql = "SELECT id,nome,email FROM usuarios";
+                $sql = "SELECT id,nome,telefone,email FROM usuarios";
                 $resultado = mysqli_query($banco, $sql);
 
                 if ($resultado->num_rows > 0) :
-                    while ($cliente = $resultado->fetch_assoc()) :
+                    while ($usuario = $resultado->fetch_assoc()) :
                         ?>
                         <tr>
-                            <td><?php echo $cliente['id']; ?></td>
-                            <td><?= $cliente['nome'] ?></td>
-                            <td><?= $cliente['email'] ?></td>
+                            <td><?php echo $usuario['id']; ?></td>
+                            <td><?= $usuario['nome'] ?></td>
+                            <td><?= $usuario['telefone'] ?></td>
+                            <td><?= $usuario['email'] ?></td>
                         </tr>
                 <?php
                     endwhile;
