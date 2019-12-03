@@ -17,14 +17,15 @@ $preco = filter_input(INPUT_POST,"preco",
 FILTER_SANITIZE_SPECIAL_CHARS);
 $preco = mysqli_real_escape_string($banco,$preco);
 
-$destino = "img/".$_FILES['imagem']['name'];
+$id = intval($_POST['id']);
+
+$destino = "../../img/".$_FILES['imagem']['name'];
 move_uploaded_file($_FILES['imagem']['tmp_name'],$destino);
 $imagem = $_FILES['imagem']['name'];
 
-$sql = "INSERT INTO produtos (nome,categoria,descricao,preco,imagem) 
-        VALUES ('$nome','$categoria','$descricao','$preco','$imagem')";
+$sql = "UPDATE produtos SET nome = '$nome', categoria = '$categoria',
+        descricao = '$descricao', preco = '$preco', imagem = '$imagem'
+        WHERE id = $id";
 mysqli_query($banco,$sql);
 
-header('location: inserir_produto.php');
-
-
+header("location: listar.php");

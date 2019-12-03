@@ -25,7 +25,6 @@ require_once "painel_de_controle.php";
         <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <td>Id</td>
                     <td>Nome</td>
                     <td>Categoria</td>
                     <td>Descrição</td>
@@ -41,7 +40,6 @@ require_once "painel_de_controle.php";
                     while ($produto = $resultado->fetch_assoc()) :
                         ?>
                         <tr>
-                            <td><?php echo $produto['id']; ?></td>
                             <td><?= $produto['nome'] ?></td>
                             <td><?= $produto['categoria'] ?></td>
                             <td><?= $produto['descricao'] ?></td>

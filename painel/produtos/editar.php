@@ -63,7 +63,6 @@ require_once "painel_de_controle.php";
             <br>
             <div id="alinharBtn">
                 <button id="btnSalvar" type="submit">Salvar</button>
-                <button id="btnListar" type="link"><a href="listar.php" id="listar">Listar<a></button><br>
             </div>
         </form>
     </div>
