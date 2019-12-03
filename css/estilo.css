@@ -16,7 +16,7 @@ body{
 
 #btnLogin{
     color: black;
-    margin-left: 670px;
+    margin-left: 800px;
 }
 #btnLogin:hover{
     color: #CD3278;
@@ -24,7 +24,7 @@ body{
 
 #btnSair{
     color: black;
-    margin-left: 800px;
+    margin-left: 930px;
 }
 #btnSair:hover{
     color: #CD3278;
@@ -58,8 +58,8 @@ body{
 
 .entrar{
     
-    /*margin-left: 900px;
-    margin-top: 10px;*/
+    margin-left: 10px;
+    /*margin-top: 10px;*/
     font-size: 20px;
     grid-area: a;
 }
@@ -116,4 +116,25 @@ h3{
     grid-template-rows: auto;
     grid-template-areas: 
     "a b";
+}
+
+#main{
+    padding: 0 0 0 0%;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 3%;
+}
+
+#imagem{
+    position: relative;
+    left: 12%;
+    top: 1%;
+}
+
+p{
+    color: black;
 }
